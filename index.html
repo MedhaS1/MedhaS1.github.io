@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSec Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span class="lock-icon">🛡️</span>
+      <span>cyber//blog</span>
+    </div>
+    <div class="actions">
+      <input id="searchInput" type="text" placeholder="Search posts..." />
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="side-title">Topics</h2>
+      <ul class="tag-list" id="tagList">
+        <li data-tag="all" class="active">All</li>
+        <li data-tag="network">Network</li>
+        <li data-tag="malware">Malware</li>
+        <li data-tag="blue-team">Blue Team</li>
+        <li data-tag="cloud">Cloud</li>
+      </ul>
+
+      <h2 class="side-title">About</h2>
+      <p class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet velit et nibh.
+      </p>
+
+      <h2 class="side-title">Newsletter</h2>
+      <form class="newsletter">
+        <input type="email" placeholder="you@example.com" />
+        <button type="submit">Join</button>
+      </form>
+    </aside>
+
+    <!-- Content -->
+    <section class="content" id="postContainer">
+      <!-- Post 1 -->
+      <article class="post-card" data-tags="network blue-team">
+        <div class="post-meta">
+          <span class="badge badge-green">Blue Team</span>
+          <span class="date">Nov 1, 2025</span>
+        </div>
+        <h2 class="post-title">Monitoring RDP for Suspicious Access</h2>
+        <p class="post-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat aliquet libero,
+          vitae feugiat leo volutpat a. Morbi viverra nisl nisi, non sodales est malesuada eget.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="post-card" data-tags="malware">
+        <div class="post-meta">
+          <span class="badge badge-red">Malware</span>
+          <span class="date">Oct 28, 2025</span>
+        </div>
+        <h2 class="post-title">Static vs Dynamic Malware Analysis</h2>
+        <p class="post-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, quam sed faucibus
+          tempor, diam augue faucibus nunc, sit amet volutpat mauris orci sed felis. Phasellus
+          porttitor luctus lorem, nec sagittis massa posuere ut.
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="post-card" data-tags="cloud network">
+        <div class="post-meta">
+          <span class="badge badge-blue">Cloud</span>
+          <span class="date">Oct 15, 2025</span>
+        </div>
+        <h2 class="post-title">Securing SSH in Multi-Cloud Environments</h2>
+        <p class="post-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt eleifend gravida.
+          Sed accumsan lobortis sem et tincidunt. Maecenas varius, velit sit amet bibendum posuere,
+          libero mauris ullamcorper sapien, sit amet egestas eros nibh ut sem.
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="post-card" data-tags="blue-team">
+        <div class="post-meta">
+          <span class="badge badge-green">Blue Team</span>
+          <span class="date">Sept 30, 2025</span>
+        </div>
+        <h2 class="post-title">Building a Home Lab for Detection Engineering</h2>
+        <p class="post-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod congue justo,
+          vitae fringilla risus rhoncus et. Vivamus sit amet suscipit erat. Maecenas facilisis
+          ullamcorper suscipit.
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
